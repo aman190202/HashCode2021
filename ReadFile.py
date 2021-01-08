@@ -19,7 +19,16 @@ def convStrtoInt(l):
   for x in l:
     x[0]=int(x[0])
   return l
-
+def twotothree(l,ing):
+  for x in l:
+    b=x[2:len(x)]
+    x.append(b)
+  for x in l:
+    for y in x:
+      if y in ing:
+        x.remove(y)
+    x.remove(x[2])
+  return l    
 if __name__=='__main__':
   
   a=open("C:\\Users\\agarw\\OneDrive\\Desktop\\HashCode2021\\a_example") #Reads the file
@@ -38,4 +47,5 @@ if __name__=='__main__':
   l=addNumbering(l)        #Added numbering to pizza list for easy naviagtion of a pizza
   #l- [pizza number,number of pizza ingredients,pizza ingredients.......]
   l.sort(reverse=True,key=len)
+  l=twotothree(l,ing)
   print(l)
