@@ -16,7 +16,7 @@ def addNumbering(l):
 	for x in l:
 		x.insert(0,i)
 		i+=1
-	return       
+	return l      
 def convStrtoInt(l):
 	for x in l:
 		x[0]=int(x[0])
@@ -39,4 +39,5 @@ if __name__=='__main__':
   l=convStrtoInt(l)		   #Converting the string part of the list into integer
   l=addNumbering(l)	       #Added numbering to pizza list for easy naviagtion of a pizza
   #l- [pizza number,number of pizza ingredients,pizza ingredients.......]
-
+  l.sort(reverse=True,key=len)
+  print(l)
