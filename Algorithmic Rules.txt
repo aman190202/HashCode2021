@@ -1,0 +1,4 @@
+1. Avoid pizza with the same elements in the same delievery
+2. More number of ingredients in big group
+3. If more than half of my ingredients in a particular pizza is already present in the other pizzas,
+   the pizza shall be removed. 
