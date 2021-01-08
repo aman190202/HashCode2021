@@ -56,6 +56,11 @@ def feeder(o,l):
     l[i].append(x)
     i+=1
   return l
+def compaSum(l):
+  for x in l:
+    x.append(sum(x[3]))
+
+
 
 if __name__=='__main__':
   
@@ -77,9 +82,17 @@ if __name__=='__main__':
   e=ranking(l)
   o=ranking1(e,l)
   l=feeder(o,l)
-
+  compaSum(l)
   #l-[[pizza number,number of pizza ingredients,[pizza ingredients],[compatibility]]]
   #compatibilty check left
   #series wise arrangement left
+  for x in l:
+    print(x[3],x[4])
+
   
+
+
+
+
+
   
