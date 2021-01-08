@@ -77,6 +77,9 @@ if __name__=='__main__':
   e=ranking(l)
   o=ranking1(e,l)
   l=feeder(o,l)
-  
+
+  #l-[[pizza number,number of pizza ingredients,[pizza ingredients],[compatibility]]]
+  #compatibilty check left
+  #series wise arrangement left
   
   
