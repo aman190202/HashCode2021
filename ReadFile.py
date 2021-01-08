@@ -1,4 +1,5 @@
-#Function to pick out all the ingredients
+
+
 def uniqueIngredients(l):
   ing=list()
   for x in l:
@@ -9,21 +10,33 @@ def uniqueIngredients(l):
   			continue
   		else:
   			ing.append(y)
-  return ing
-
+  return ing #Function to pick out all the ingredients
+def addNumbering(l):
+	i=0
+	for x in l:
+		x.insert(0,i)
+		i+=1
+	return       
+def convStrtoInt(l):
+	for x in l:
+		x[0]=int(x[0])
+	return l
 
 if __name__=='__main__':
   
-  #Creating an extension to read a file and extract its elements
   a=open("C:\\Users\\agarw\\OneDrive\\Desktop\\HashCode2021\\a_example") #Reads the file
-  b=a.readline()                 #Reads the first line of the file
-  b=b.split()                    #Splits the contents of the file b[1]-number of 2; b[2]- number of 3 ; b[3]-number of 4
+  b=a.readline()                 										 
+  b=b.split()                    										
   l=list()
   T=[[2],[3],[4]]                     
-  for x in range(int(b[0])):    
+  for x in range(int(b[0])):    														
     c=a.readline()      
     c=c.split()
     l.append(c)
-  
-  #Picking out the unique ingredients used in all the pizzas in the variabe "ing"
-  ing=uniqueIngredients(l)
+ 
+  #Functions modified and added on 8/1/2021
+  ing=uniqueIngredients(l) #Picking out the unique ingredients used in all the pizzas in the variabe "ing"
+  l=convStrtoInt(l)		   #Converting the string part of the list into integer
+  l=addNumbering(l)	       #Added numbering to pizza list for easy naviagtion of a pizza
+  #l- [pizza number,number of pizza ingredients,pizza ingredients.......]
+
