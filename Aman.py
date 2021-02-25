@@ -8,10 +8,11 @@ if __name__=='__main__':
   S=int(b[2])
   V=int(b[3])
   F=int(b[4])
-
-
-  l=list()                     
+  l=list()
+  i=0                     
   for x in range(S):                                
     c=a.readline()      
     c=c.split()
-    l.append(c)
+    l[i][0].append(c)
+    i+=1
+  print(l)
