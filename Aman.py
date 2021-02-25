@@ -19,10 +19,11 @@ if __name__=='__main__':
     c[1]=int(c[1])
     c[3]=int(c[3])
     l1.append(c)
+
   l2=list()
   for x in range(V):
     e=a.readline()
     e=e.split()
     e[0]=int(e[0])
     l2.append(e)
-  print(l1)
+  #l1[i][0]- beginning of the street l1[i][1]- end of the street l1[i][2]- name of the street l l1[i][3]- time taken
