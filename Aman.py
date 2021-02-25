@@ -9,6 +9,8 @@ if __name__=='__main__':
   V=int(b[3])
   F=int(b[4])
   l=list()
+  i=0                     
+
   for x in range(S):                                
     c=a.readline()      
     c=c.split()
