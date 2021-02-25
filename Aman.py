@@ -10,9 +10,10 @@ if __name__=='__main__':
   F=int(b[4])
   l=list()
   i=0                     
+
   for x in range(S):                                
     c=a.readline()      
     c=c.split()
-    l[i][0].append(c)
+    l.append(c)
     i+=1
   print(l)
