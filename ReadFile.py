@@ -77,7 +77,6 @@ if __name__=='__main__':
   ing=uniqueIngredients(l) #Picking out the unique ingredients used in all the pizzas in the variabe "ing"
   l=convStrtoInt(l)      #Converting the string part of the list into integer
   l=addNumbering(l)        #Added numbering to pizza list for easy naviagtion of a pizza
-  #l- [pizza number,number of pizza ingredients,pizza ingredients.......]
   l=twotothree(l,ing)
   e=ranking(l)
   o=ranking1(e,l)
@@ -87,7 +86,7 @@ if __name__=='__main__':
   #compatibilty check left
   #series wise arrangement left
   for x in l:
-    print(x[3],x[4])
+  	print(x)
 
   
 
